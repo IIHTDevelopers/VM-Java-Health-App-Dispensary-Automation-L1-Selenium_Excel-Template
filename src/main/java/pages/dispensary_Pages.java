@@ -1,11 +1,125 @@
 package pages;
 
 import java.util.Map;
-
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class dispensary_Pages extends StartupPage {
+	
+	By usernameTextfield=By.id(" ");
+	By usernameTextbox = By.xpath(" ");
+	By passwordTextbox = By.xpath(" ");
+	By signInButton = By.xpath(" ");
+	By registeredPatientTextElement = By.xpath(" ");
+	By dispensaryModule = By.xpath(" ");
+	By dispensaryToggle = By.xpath(" ");	
+	By PrescriptionSubModule = By.xpath(" ");
+	By saleSubModule = By.xpath(" ");
+	By stockSubModule = By.xpath(" ");
+	By counterSubModule = By.xpath(" ");
+	By reportsSubModule = By.xpath(" ");
+	By patientConsumptionSubModule = By.xpath(" ");
+	By morningCounter = By.xpath(" ");
+	By eveningCounter = By.xpath(" ");
+	By nightCounter = By.xpath(" ");
+	By counterSelection = By.xpath(" ");
+	By saleTab = By.xpath(" ");
+	By saleListTab = By.xpath(" ");
+	By returnFromCustomerTab = By.xpath(" ");
+	By returnSaleListTab = By.xpath(" ");
+	By provisionalBillsTab = By.xpath(" ");
+	By settlementTab = By.xpath(" ");
+	By ProvisionalReturnTab = By.xpath(" ");
+	By addNewPatientPopup = By.xpath(" ");
+	By okButton = By.xpath(" ");
+	By errorMeesageInFirstNameTextField = By.xpath(" ");
+	By addNewPatientPageTitle = By.xpath(" ");
+	By patientConsuptionTab = By.xpath(" ");
+	By newConsuptionButton = By.xpath(" ");
+	By saveConsuptionButton = By.id(" ");
+	By confirmMessage = By.xpath(" ");
+	By confirmButton = By.id(" ");
+	By newConsumptionEntryPageCancelButton = By.xpath(" ");
+	By filterByStoreDropdown = By.id(" ");
+
+	By firstNameTextFieldInAddNewPatient = By.id(" ");
+	By middleNameTextFieldInAddNewPatient = By.id(" ");
+	By lastNameTextFieldInAddNewPatient = By.id(" ");
+	By ageTextFieldInAddNewPatient = By.id(" ");
+	By contactNumberTextFieldInAddNewPatient = By.id(" ");
+	By XButton = By.xpath(" ");
+	By lastButtonInstockSubModule = By.xpath(" ");
+	By totalStockValueText = By.xpath(" ");
+
+	By printInvoiceButtonElement = By.xpath(" ");
+	By discardButtonElement = By.xpath(" ");
+	By invoiceHistoryTextElement = By.xpath(" ");
+	By creditLimitsAndBalancesTextElement = By.xpath(" ");
+
+	By storeDropdownElement = By.xpath(" ");
+	By totalStockValueOfAllStockElement = By.xpath(" ");
+
+	By requisitionsLinkElement = By.xpath(" ");
+	By createRequisitionsButtonElement = By.xpath(" ");	
+	By mainDispensaryOption = By.xpath(" ");
+	By mainStoreOption = By.xpath(" ");
+	By requisitionSubModule = By.xpath(" ");
+	By createRequisitionButton = By.xpath(" ");
+	By itemNameTextfield=By.id(" ");
+	By cancelButton = By.xpath(" ");
+	By viewButton = By.xpath(" ");	
+	By medicineNameField = By.xpath(" ");
+	By printButton = By.xpath(" ");
+	By requisitionsListButton = By.xpath(" ");
+	By RequisitionPageTitle = By.xpath(" ");
+	By socialServiceModule = By.xpath(" ");	
+	By registerNewSSUPatientButton = By.xpath(" ");
+	By addressTextField = By.id(" ");
+	By xButton = By.xpath(" ");
+	By procurementModule = By.xpath(" ");
+	By settingsTab = By.xpath(" ");
+	By invoiceHeadersSubTab = By.xpath(" ");
+	By addNewInvoiceHeaderButton = By.xpath(" ");
+	By chooseFileButton = By.id(" ");
+
+	By shortCutKeysArrowIconElement = By.xpath(" ");
+	By salesPageTooltipsValueElement = By.xpath(" ");
+	By dispensarySalesNavigationMenuElement = By.xpath(" ");
+
+	By appointmentTab=By.xpath(" ");
+	By keyboardButton=By.xpath(" ");
+	By tooltip=By.xpath(" ");
+	By countryDropdownByElement = By.xpath(" ");
+	By dispensarySaleTabElement = By.xpath(" ");
+
+	By patientSearchTextBoxElement = By.xpath(" ");
+	By listOfpatientlElement = By.xpath(" ");
+
+	By operationTheatreNavMenuElement = By.xpath(" ");
+	By newOtBookingButtonElement = By.xpath(" ");
+	By addNewOtButtonElement = By.xpath(" ");
+	By addInvoiceHeaderCloseButtonElement = By.xpath(" ");
+
+	By othersChargesTab = By.xpath(" ");
+	By addOtherChargesButton = By.xpath(" ");
+	By isVATApplicableCheckBox = By.xpath(" ");
+	By isActiveCheckBox = By.xpath(" ");
+	By isDefaultCheckBox = By.xpath(" ");
+	By bookingOTSchedulePageCloseButtonElement = By.xpath(" ");
+	By procurementModuleSettingTabElement = By.xpath(" ");
+	By addOtherChargesCloseButtonElement = By.xpath(" ");
+	By requisitionTab = By.xpath(" ");
+	By addRequisitionsPageName = By.xpath(" ");
+	By plusIcon = By.xpath(" ");
+	By itemNameTextField = By.id(" ");
+	By quantityTextField = By.id(" ");
+	By remarkTextField = By.id(" ");
+	By cancelButtonInAddRequisition = By.xpath(" ");
+	By viewIconiconOfRecentlyCreatedDocument = By.xpath(" ");
+	By requisitionDetailsPrintPageName = By.xpath(" ");	
+	By medicineName = By.xpath(" ");
+	By closeButton = By.xpath(" ");
 
 	
 	String pageName = this.getClass().getSimpleName();
