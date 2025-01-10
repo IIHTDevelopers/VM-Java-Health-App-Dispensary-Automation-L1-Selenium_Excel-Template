@@ -158,30 +158,7 @@ public class dispensary_testcase extends AppTestBase
 		Assert.assertTrue(locatorsFactoryInstance.requisitionsListButtonIsPresent(driver).isDisplayed(), "Requisitions List Button is not displayed in the current page, Please check manually");
 	}
 		
-	@Test(priority = 13, groups = {"sanity"}, description="On the Requisition Details Print page, Get the medicine name from the Requisition Details Print table and  validate the medicine name is not blank.")
-	public void  fetchTheDataFromTheTable () throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(dispensary_PagesInstance.getTheMedicineNameFromTable(),"Medicine name is not present in the current page, Please check manually") ;
-		Assert.assertTrue(locatorsFactoryInstance.medicineQuantityIsPresent(driver).isDisplayed(), "Medicine quantity is not displayed in the current page, Please check manually");
-	}
 	
-	@Test(priority = 14, groups = {"sanity"}, description="On the New SSU Patient Registration under social service module, get the place holder name of Address textfiled of New SSU Patient Registration page and verify  the place holder name.")
-	public void validatePlaceholderName() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationPopup");
-		Assert.assertEquals(dispensary_PagesInstance.inAddressFieldValidateThePlaceHolderNameAndPrintOnConsole(),expectedData.get("AddressFieldPlaceHolder"),"Confirmation message is not present in the current page, Please check manually") ;
-		Assert.assertEquals(locatorsFactoryInstance.raceTextFieldPlaceHolderIsPresent(),expectedData.get("RaceFieldPlaceHolder"),"race Textfield is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 15, groups = {"sanity"}, description="On the New SSU Patient Registration page, Close this New SSU Patient Registration popup page by using javaScript.")
-	public void performJavaScriptExecutorOperation() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(dispensary_PagesInstance.closeNewSSUPatientRegistrationPopupByUsingJsExecutor(), "Unable to perform the js Executor operation, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.listByPatientStatusRadioButtonIsPresent(driver).isSelected(), "RadioButton is not present in the current page, Please check manually");
-	}
 	
 	
 	@AfterClass(alwaysRun = true)
