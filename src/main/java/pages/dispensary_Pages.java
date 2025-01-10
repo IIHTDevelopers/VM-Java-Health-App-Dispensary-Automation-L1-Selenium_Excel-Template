@@ -368,43 +368,5 @@ public class dispensary_Pages extends StartupPage {
 		return false;
 	}
 	
-	
-	/**@Test13
-	 * about this method getTheMedicineNameFromTable() 
-	 * @param : null
-	 * @description :  On the "Requisition Details Print" page, Get the medicine name from the "Requisition Details Print" table and  validate the medicine name is not blank.
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean getTheMedicineNameFromTable() throws Exception {
-
-		return false;
-	}
-	
-
-	/**@Test14
-	 * about this method inAddressFieldValidateThePlaceHolderNameAndPrintOnConsole() 
-	 * @param : null
-	 * @description : On the "New SSU Patient Registration" under social service module, get the place holder name of "Address" textfiled of  "New SSU Patient Registration" page and verify  the place holder name.
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String inAddressFieldValidateThePlaceHolderNameAndPrintOnConsole() throws Exception {
-		
-		return null;
-	}
-	
-	/**@Test15
-	 * about this method closeNewSSUPatientRegistrationPopupByUsingJsExecutor() 
-	 * @param : null
-	 * @description : On the "New SSU Patient Registration" page, Close this "New SSU Patient Registration" popup page by using javaScript.
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean closeNewSSUPatientRegistrationPopupByUsingJsExecutor() throws Exception {
-		
-		return false;
-	}
-
 
 }
