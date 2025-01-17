@@ -127,7 +127,7 @@ public class dispensary_Pages extends StartupPage {
 		super(driver);
 	}
 
-	/**@Test1
+	/**@Test1.1
 	 * about this method loginTohealthAppByGivenValidCredetial() 
 	 * @param : Map<String, String>
 	 * @description : fill usernameTextbox & passwordTextbox and click on sign in button
@@ -301,72 +301,5 @@ public class dispensary_Pages extends StartupPage {
 			
 		return null;
 	}
-
-
-	/**@Test9
-	 * about this method selectMainStoreFromFilterSelectMainStoreFromFilter() 
-	 * @param : null
-	 * @description : on the Stock page,select Main store from Filter by store dropdown and verify that Main store is selected and stock value are filtered by the selected store name 
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean selectMainStoreFromFilterSelectMainStoreFromFilter() throws Exception {
-		
-		return false;
-	}
-
-
-	/**@Test10
-	 * about this method validateCreateRequisitionButtonIsPresentGoToThisPageThenValidateThePageName() 
-	 * @param : null
-	 * @description : on the stock page , please validate clicking "Create Requisition" button navigate to "Add Requisitions" page and validate the page Name.
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public String validateCreateRequisitionButtonIsPresentGoToThisPageThenValidateThePageName() throws Exception {
-		
-		return null;
-	}
-
-
-
-	/**@Test11
-	 * about this method byClickingOnThatButtonSomeTextFieldsAreDisplyed() 
-	 * @param : null
-	 * @description : on the Add Requisition page, clicking the + icon button on right hand side of Remarks text box add a  the New set of elements to add a new records and validate New Item text field, Quantity Text field and Remark text box are present or not 2nd rows?
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean byClickingOnThatButtonSomeTextFieldsAreDisplyed() throws Exception {
-			
-		return false;
-	}
-	
-	
-	/**@Test12.1
-	 * about this method verifyPageNameOfRequisitionDetailsPage() 
-	 * @param : null
-	 * @description : On the "Requisition" page, verify that view button under "action" navigate to the "Requisition Details Print" page and validate the page name is  "Requisition Details Print" 
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String verifyPageNameOfRequisitionDetailsPage() throws Exception {
-		
-		return null;
-	}
-	
-	
-	/**@Test12.2
-	 * about this method validateTheButtonsArePresentOrNot() 
-	 * @param : null
-	 * @description :  validate "print" and "Requisitions List" button are present
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean validateTheButtonsArePresentOrNot() throws Exception {
-
-		return false;
-	}
-	
 
 }
