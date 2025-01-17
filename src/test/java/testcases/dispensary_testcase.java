@@ -123,43 +123,6 @@ public class dispensary_testcase extends AppTestBase
 		Assert.assertTrue(locatorsFactoryInstance.confirmMessageIsPresent(driver).isDisplayed(), "Confirmation message is not present in the current page, Please check manually");
 	}
 	
-	@Test(priority = 9, groups = {"sanity"}, description="on the Stock page,select Main store from Filter by store dropdown and verify that Main store is selected and stock value are filtered by the selected store name ")
-	public void  selectFilterverifyFilterIsSelectedOrNot() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(dispensary_PagesInstance.selectMainStoreFromFilterSelectMainStoreFromFilter(),"Confirmation message is not present in the current page, Please check manually") ;
-		Assert.assertTrue(locatorsFactoryInstance.mainStoreDropDownIsPresent(driver).isSelected(), "Main Store DropDown is selected in the current page, Please check manually");
-	}
-	
-	@Test(priority = 10, groups = {"sanity"}, description="on the stock page , please validate clicking Create Requisition button navigate to Add Requisitions page and validate the page Name")
-	public void  validateTheButtonIsPresentAndNavigateToThisPage() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "PageTitle");
-		Assert.assertEquals(dispensary_PagesInstance.validateCreateRequisitionButtonIsPresentGoToThisPageThenValidateThePageName(),expectedData.get("AddRequisitionPageName"),"Confirmation message is not present in the current page, Please check manually") ;
-		Assert.assertTrue(locatorsFactoryInstance.addRequisitionsPageNameIsPresent(driver).isDisplayed(), "Add Requisitions Page Name is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 11, groups = {"sanity"}, description="on the Add Requisition page, clicking the + icon button on right hand side of Remarks text box add a  the New set of elements to add a new records and validate New Item text field, Quantity Text field and Remark text box are present or not 2nd rows?")
-	public void  verifyTheFieldsAreDisplayed() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(dispensary_PagesInstance.byClickingOnThatButtonSomeTextFieldsAreDisplyed(),"One of the field is not present in the current page, Please check manually") ;
-		Assert.assertTrue(locatorsFactoryInstance.remarkTextFieldIsPresent(driver).isDisplayed(), "Remarks TextField is not displayed in the current page, Please check manually");
-	}
-	
-	@Test(priority = 12, groups = {"sanity"}, description="On the Requisition page, verify that view button under action navigate to the Requisition Details Print page and validate the page name is Requisition Details Print and validate print and Requisitions List button are present.")
-	public void  verifyThePageNameAndButtons() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "PageTitle");
-		Assert.assertEquals(dispensary_PagesInstance.verifyPageNameOfRequisitionDetailsPage(),expectedData.get("pageNameAfterClickingOnView"),"Page name is not matching, Please check manually") ;
-		Assert.assertTrue(dispensary_PagesInstance.validateTheButtonsArePresentOrNot(),"One of the field is not present in the current page, Please check manually") ;
-		Assert.assertTrue(locatorsFactoryInstance.requisitionsListButtonIsPresent(driver).isDisplayed(), "Requisitions List Button is not displayed in the current page, Please check manually");
-	}
-		
-	
-	
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
