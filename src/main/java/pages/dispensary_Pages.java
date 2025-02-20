@@ -7,12 +7,14 @@ import org.openqa.selenium.WebElement;
 
 public class dispensary_Pages extends StartupPage {
 	
-	By usernameTextfield= null;
+//	TC1-Locators
 	By usernameTextbox = null;
 	By passwordTextbox = null;
 	By signInButton = null;
 	By registeredPatientTextElement = null;
+//	TC2-Locators
 	By dispensaryModule = null;
+//	TC3-Locators
 	By dispensaryToggle = null;	
 	By PrescriptionSubModule = null;
 	By saleSubModule = null;
@@ -20,26 +22,30 @@ public class dispensary_Pages extends StartupPage {
 	By counterSubModule = null;
 	By reportsSubModule = null;
 	By patientConsumptionSubModule = null;
+//	TC4-Locators
 	By morningCounter = null;
-	By eveningCounter = null;
-	By addNewPatientPopup = null;
+	By creditLimitsAndBalancesTextElement = null;
+	By printInvoiceButtonElement = null;
+	By discardButtonElement = null;
+	By invoiceHistoryTextElement = null;
+//	TC5-Locators
+	By addNewPatientPopup = null;	
+	By addNewPatientPageTitle = null;
+//	TC6-Locators
 	By okButton = null;
 	By errorMeesageInFirstNameTextField = null;
-	By addNewPatientPageTitle = null;
-	By patientConsuptionTab = null;
-	By newConsuptionButton = null;
-	By saveConsuptionButton = null;
-	By confirmMessage = null;
+//	TC7-Locators
 	By firstNameTextFieldInAddNewPatient = null;
 	By middleNameTextFieldInAddNewPatient = null;
 	By lastNameTextFieldInAddNewPatient = null;
 	By ageTextFieldInAddNewPatient = null;
 	By contactNumberTextFieldInAddNewPatient = null;
-	By printInvoiceButtonElement = null;
-	By discardButtonElement = null;
-	By invoiceHistoryTextElement = null;
-	By creditLimitsAndBalancesTextElement = null;
+//	TC8-Locators
 	By xButton = null;
+	By patientConsumptionTab = null;	
+	By newConsumptionButton = null;
+	By saveConsumptionButton = null;
+	By confirmMessage = null;
 
 	
 	String pageName = this.getClass().getSimpleName();
