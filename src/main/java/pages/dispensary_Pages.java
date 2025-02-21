@@ -32,7 +32,7 @@ public class dispensary_Pages extends StartupPage {
 	By addNewPatientPopup = null;	
 	By addNewPatientPageTitle = null;
 //	TC6-Locators
-	By okButton = null;
+	By addNewPatientFormOkButton = null;
 	By errorMeesageInFirstNameTextField = null;
 //	TC7-Locators
 	By firstNameTextFieldInAddNewPatient = null;
@@ -45,7 +45,7 @@ public class dispensary_Pages extends StartupPage {
 	By patientConsumptionTab = null;	
 	By newConsumptionButton = null;
 	By saveConsumptionButton = null;
-	By confirmMessage = null;
+	By newConsumptionEntryFormConfirmMessage = null;
 
 	
 	String pageName = this.getClass().getSimpleName();
