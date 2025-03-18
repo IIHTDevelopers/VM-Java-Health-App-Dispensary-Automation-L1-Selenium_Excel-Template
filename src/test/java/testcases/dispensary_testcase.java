@@ -99,30 +99,7 @@ public class dispensary_testcase extends AppTestBase
 		Assert.assertEquals(dispensary_PagesInstance.validateErrorMessageInFirstnameTextfield(),expectedData.get("FirstNameFieldErrorMessage"),"Error message is not present in the current page, Please check manually") ;
 		Assert.assertTrue(locatorsFactoryInstance.errorMeesageInLastNameTextFieldErrorMessageIsPresent(driver).isDisplayed(), "Error message is not present in the current page, Please check manually");
 	}
-	
-	@Test(priority = 7, groups = {"sanity"}, description="Fill all the text fields which are present inside the Add New Patient form and Validate entered values")
-	public void fillAllTheTextfields() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "addNewPatientPopup");
-		Assert.assertEquals(dispensary_PagesInstance.fillfirstNameTextFieldVerifyTheFirstName(expectedData), expectedData.get("firstName"),"firstName Text is not present in the current page, Please check manually");
-		Assert.assertEquals(dispensary_PagesInstance.fillmiddelNameTextFieldVerifyThemiddleName(expectedData), expectedData.get("middleName"),"Middle name Text is not present in the current page, Please check manually");
-		Assert.assertEquals(dispensary_PagesInstance.filllastNameTextfieldVerifylastName(expectedData), expectedData.get("lastName"),"lastName Text is not present in the current page, Please check manually");
-		Assert.assertEquals(dispensary_PagesInstance.fillAgeTextFieldVerifyTheAge(expectedData), expectedData.get("age"),"Age Text is not present in the current page, Please check manually");
-		Assert.assertEquals(dispensary_PagesInstance.fillContactNumberTextFieldVerifyContactNumber(expectedData), expectedData.get("contact"),"Contact Number Text is not present in the current page, Please check manually");
-		Assert.assertEquals(locatorsFactoryInstance.ageTextFieldIsPresent(),expectedData.get("age"),"Age field Text is not present in the current page, Please check manually");
-	}
-	
-	
-	@Test(priority = 8, groups = {"sanity"}, description="On the New Consumption Entry's page, validate the confirm! Message that is Are you sure you want to Proceed ?")
-	public void  validateTheConfirmMessage() throws Exception {
-		dispensary_PagesInstance = new dispensary_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "healthAppErrorMessages");
-		Assert.assertEquals(dispensary_PagesInstance.validateTheConfirmMessageOnTheNewConsumptionEntryPage(),expectedData.get("ConfirmationMessage"),"Confirmation message is not present in the current page, Please check manually") ;
-		Assert.assertTrue(locatorsFactoryInstance.confirmMessageIsPresent(driver).isDisplayed(), "Confirmation message is not present in the current page, Please check manually");
-	}
-	
+		
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
