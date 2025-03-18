@@ -34,19 +34,6 @@ public class dispensary_Pages extends StartupPage {
 //	TC6-Locators
 	By addNewPatientFormOkButton = null;
 	By errorMeesageInFirstNameTextField = null;
-//	TC7-Locators
-	By firstNameTextFieldInAddNewPatient = null;
-	By middleNameTextFieldInAddNewPatient = null;
-	By lastNameTextFieldInAddNewPatient = null;
-	By ageTextFieldInAddNewPatient = null;
-	By contactNumberTextFieldInAddNewPatient = null;
-//	TC8-Locators
-	By xButton = null;
-	By patientConsumptionTab = null;	
-	By newConsumptionButton = null;
-	By saveConsumptionButton = null;
-	By newConsumptionEntryFormConfirmMessage = null;
-
 	
 	String pageName = this.getClass().getSimpleName();
 	public dispensary_Pages(WebDriver driver) {
@@ -151,80 +138,6 @@ public class dispensary_Pages extends StartupPage {
 	 */
 	public String validateErrorMessageInFirstnameTextfield() throws Exception {
 		
-		return null;
-	}
-
-	/**@Test7.1
-	 * about this method fillfirstNameTextFieldVerifyTheFirstName() 
-	 * @param : Map<String, String>
-	 * @description : fill First Name TextField and Verify First name
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String fillfirstNameTextFieldVerifyTheFirstName(Map<String, String> expectedData) throws Exception {
-
-		return null;
-	}
-
-	/**@Test7.2
-	 * about this method fillmiddelNameTextFieldVerifyThemiddleName() 
-	 * @param : Map<String, String>
-	 * @description : fill Middle Name TextField and Verify middle name
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String fillmiddelNameTextFieldVerifyThemiddleName(Map<String, String> expectedData) throws Exception {
-
-		return null;
-	}
-
-	/**@Test7.3
-	 * about this method filllastNameTextfieldVerifylastName() 
-	 * @param : Map<String, String>
-	 * @description : fill Last Name TextField and Verify Last name
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String filllastNameTextfieldVerifylastName(Map<String, String> expectedData) throws Exception {
-
-		return null;
-	}
-
-	/**@Test7.4
-	 * about this method fillAgeTextFieldVerifyTheAge() 
-	 * @param : Map<String, String>
-	 * @description : fill age and Verify the age.
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String fillAgeTextFieldVerifyTheAge(Map<String, String> expectedData) throws Exception {
-
-		return null;
-	}
-
-
-
-	/**@Test7.5
-	 * about this method fillContactNumberTextFieldVerifyContactNumber() 
-	 * @param : Map<String, String>
-	 * @description : fill Contact Number TextField and Verify Contact Number
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String fillContactNumberTextFieldVerifyContactNumber(Map<String, String> expectedData) throws Exception {
-
-		return null;
-	}	
-
-	/**@Test8
-	 * about this method validateTheConfirmMessageOnTheNewConsumptionEntryPage() 
-	 * @param : null
-	 * @description : On the "New Consumption Entry's page, validate the confirm! Message that is "Are you sure you want to Proceed ?"
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public String validateTheConfirmMessageOnTheNewConsumptionEntryPage() throws Exception {
-			
 		return null;
 	}
 
